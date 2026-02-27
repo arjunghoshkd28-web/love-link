@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Special Question 💖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f0;
+            padding-top: 100px;
+        }
+
+        h1 {
+            color: #ff3385;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        #yesBtn {
+            background-color: #ff3385;
+            color: white;
+        }
+
+        #noBtn {
+            background-color: gray;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Anushka ❤️</h1>
+    <h2>Kya aap meri future family ki official co-founder banna chahengi? 😌</h2>
+
+    <button id="yesBtn" onclick="showLove()">Yes 💖</button>
+    <button id="noBtn" onmouseover="moveButton()">No 🙈</button>
+
+    <script>
+        function showLove() {
+            document.body.innerHTML = "<h1 style='color:#ff3385;'>Yayyyy 💖 Ab officially meri ho 😍</h1>";
+        }
+
+        function moveButton() {
+            var x = Math.random() * window.innerWidth - 100;
+            var y = Math.random() * window.innerHeight - 50;
+            var btn = document.getElementById("noBtn");
+            btn.style.left = x + "px";
+            btn.style.top = y + "px";
+        }
+    </script>
+
+</body>
+</html>
